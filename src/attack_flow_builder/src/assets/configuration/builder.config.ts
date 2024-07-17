@@ -93,6 +93,7 @@ const config: AppConfiguration = {
                                 ["campaign", "Campaign"],
                                 ["threat-actor", "Threat Actor"],
                                 ["malware", "Malware"],
+                                ["attack-tree", "Attack Tree"],
                                 ["other", "Other"]
                             ]
                         },
@@ -334,7 +335,7 @@ const config: AppConfiguration = {
                     indicator_types              : { type: PropertyType.List, form: { type: PropertyType.String, is_required: true } },
                     pattern                      : { type: PropertyType.String, is_required: true },
                     pattern_type                 : { type: PropertyType.String, is_required: true },
-                    patter_version               : { type: PropertyType.String },
+                    pattern_version              : { type: PropertyType.String },
                     valid_from                   : { type: PropertyType.Date, is_required: true},
                     valid_until                  : { type: PropertyType.Date },
                     kill_chain_phases            : { type: PropertyType.List, form: { type: PropertyType.String }},
