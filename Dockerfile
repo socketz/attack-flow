@@ -5,5 +5,5 @@ WORKDIR /attack_flow_builder
 RUN npm ci
 RUN npm run build
 
-FROM nginx:1.21-alpine
+FROM nginx:1.27-alpine
 COPY --from=builder /attack_flow_builder/dist /usr/share/nginx/html
